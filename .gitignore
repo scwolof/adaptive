@@ -133,3 +133,7 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# C++ generated files
+adaptive/server/server_build
+!adaptive/server/server_build/CMakeLists.txt
