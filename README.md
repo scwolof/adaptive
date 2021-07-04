@@ -1,2 +1,4 @@
 # adaptive
-Ad recommender practice platform
+Ad recommender system
+
+### WORK IN PROGRESS
