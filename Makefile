@@ -1,11 +1,12 @@
-.PHONY: all clean thrift
+.PHONY: all clean thrift python
 
 DIV = "-------------------------------"
 
 BASEDIR = adaptive
 INTERFACEDIR = ${BASEDIR}/thrift
+CLIENTDIR = ${BASEDIR}/client
 
-all: clean thrift
+all: clean thrift python
 
 clean:
 	@echo ${DIV}
@@ -16,3 +17,8 @@ thrift:
 	@echo ${DIV}
 	@echo "Compile thrift"
 	make build-thrift -C ${INTERFACEDIR}
+
+python:
+	@echo ${DIV}
+	@echo "python setup install"
+	python setup.py -q install
